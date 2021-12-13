@@ -57,12 +57,12 @@ them are in the circle, π is then estimated to be `4*800/1000=3.2`
 
 You will write a program to estimate π using this algorithm. In particular, it is as follows:
 - Generate N random points:
-  • Each point has two coordinates x and y
-  • Both x and y are generated using the function uniform() from package random
-  • The range of both x and y are from -1 to 1
+  - Each point has two coordinates x and y
+  - Both x and y are generated using the function uniform() from package random
+  - The range of both x and y are from -1 to 1
 - For each point:
-  • Calculate their distance to the origin, which is sqrt(x2+y2)
-  • If the distance to the origin is greater than 1, the point is outside of the circle. Otherwise, it is inside the circle.
+  - Calculate their distance to the origin, which is sqrt(x2+y2)
+  - If the distance to the origin is greater than 1, the point is outside of the circle. Otherwise, it is inside the circle.
 - Count the number of points inside the circle.
 - Calculate the estimated π as shown above and return it
 
