@@ -215,6 +215,6 @@ def draw_bar_chart(record_date, large_thick, large_thin, medium_thick, medium_th
 # you don’t need to return anything
 ```
 
-Solution: `/lib/p4.py`
+Solution: `/lib/p4-solution.py`
 
 Test: `python -m lib/p4-solution`
