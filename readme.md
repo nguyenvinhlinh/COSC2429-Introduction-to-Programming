@@ -66,6 +66,8 @@ You will write a program to estimate π using this algorithm. In particular, it 
 - Count the number of points inside the circle.
 - Calculate the estimated π as shown above and return it
 
+![](/images/1.png)
+
 The input of your function is the number of random points to generate, and the output is
 the estimated π.
 
@@ -143,7 +145,7 @@ def flour_order(large_thick, large_thin, medium_thick, medium_thin):
 return total_flour, selected_provider, total_cost
 ```
 
-Solution
+Solution:
 ```python
 def flour_order(large_thick, large_thin, medium_thick, medium_thin):
     total_flour = math.ceil((0.55 * large_thick) + (0.5 * large_thin) +  (0.45 * medium_thick) + (0.4* medium_thin))
@@ -180,4 +182,29 @@ def flour_order(large_thick, large_thin, medium_thick, medium_thin):
         total_cost = cost_b
 
     return total_flour, selected_provider, total_cost
+```
+
+
+## Problem 4:
+You decide to keep track of the number of pizzas sold for each type every day with a stacked bar chart.
+Use the turtle module to draw the bar chart with the following requirements:
+
+- Each bar includes four rectangles representing the number of pizzas sold for each type. From bottom to top,
+they are large thick, large thin, medium thick and medium thin respectively.
+- Each rectangle is of a different color.
+- Draw the x and y axes.
+- The record date must be printed below the bar.
+- The total number of pizzas must be printed on top of the bar.
+
+Example:
+
+![](/images/2.png)
+
+**IMPORTANT**: Your function must be named and must have the function parameters listed
+in the same order as below.
+
+```python
+def draw_bar_chart(record_date, large_thick, large_thin, medium_thick, medium_thin):
+# your logic here
+# you don’t need to return anything
 ```
