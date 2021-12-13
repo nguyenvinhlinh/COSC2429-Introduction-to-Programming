@@ -78,3 +78,16 @@ def estimate_pi(N):
 # return the estimated number
 return estimated_pi
 ```
+
+Solution:
+```python
+def estimate_pi(N):
+    inner_counter = 0
+    for i in range(N):
+        x = random.uniform(-1,1)
+        y = random.uniform(-1,1)
+        dis = sqrt(x ** 2 + y ** 2)
+        if dis <= 1:
+            inner_counter += 1
+    return 4.0 * inner_counter / N
+```
