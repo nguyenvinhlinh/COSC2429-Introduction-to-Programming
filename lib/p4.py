@@ -1,3 +1,11 @@
+# RMIT University Vietnam
+# Course: COSC2429 Introduction to Programming
+# Semester: 2021C
+# Assignment: 1
+# Author: Nguyen Cong Thinh (s3926387)
+# Created date: 10/11/2021
+# Last modified date: 27/11/2021
+
 import turtle               #Setting turtle and screen
 win = turtle.Screen()
 win.title("pizza stacked bar chart")

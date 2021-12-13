@@ -1,5 +1,5 @@
 # COSC2429 – Introduction to Programming
-## Assignment 1 – 2021C
+## Assignment 1 – 2021C. This repo is created to help my friend fix his mistakes.
 
 Please submit a zip folder including 4 python files, 1 for each of these questions. They must
 be named p1.py, p2.py, p3.py, and p4.py accordingly. No capital letter in the file names. There
@@ -216,4 +216,5 @@ def draw_bar_chart(record_date, large_thick, large_thin, medium_thick, medium_th
 ```
 
 Solution: `/lib/p4.py`
+
 Test: `python -m lib/p4-solution`

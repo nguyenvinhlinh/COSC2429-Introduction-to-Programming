@@ -1,3 +1,11 @@
+# RMIT University Vietnam
+# Course: COSC2429 Introduction to Programming
+# Semester: 2021C
+# Assignment: 1
+# Author: Nguyen Cong Thinh (s3926387)
+# Created date: 10/11/2021
+# Last modified date: 27/11/2021
+
 import math
 
 def total_flour(large_thick, large_thin, medium_thick, medium_thin):
@@ -67,7 +75,7 @@ def flour_order(large_thick, large_thin, medium_thick, medium_thin):
     return "\nWe need to order: " + str(total_flour(large_thick, large_thin, medium_thick, medium_thin)) + "KG of flour, which cost " + str(costA) + " VND if we buy form A and " + str(costB) + " VND if we buy from B"
 
 
-
+# My solution
 def flour_order_2(large_thick, large_thin, medium_thick, medium_thin):
     total_flour = math.ceil((0.55 * large_thick) + (0.5 * large_thin) +  (0.45 * medium_thick) + (0.4* medium_thin))
 
