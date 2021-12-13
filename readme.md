@@ -91,3 +91,46 @@ def estimate_pi(N):
             inner_counter += 1
     return 4.0 * inner_counter / N
 ```
+
+## Problem 3:
+You are the owner of a pizza restaurant. Every two days, you have to predict the numbers
+of pizzas sold in the next two days to prepare the ingredients in advance. The most
+important ingredient of a pizza is bread flour. The amount of flour used for each pizza
+depends on its size and thickness. A and B are the two best flour providers in the city. You
+will need to estimate the total amount of flour and make the decision to buy from the
+provider whose price is cheaper. You decide to write a program to help determine the
+provider. The recipes of your restaurant states that:
+
+|-------|-------|--------|
+|       | Large | Medium |
+|-------|-------|--------|
+| Thick | 550g  | 450g   |
+|-------|-------|--------|
+| Thin  | 500g  | 400g   |
+|-------|-------|--------|
+
+In addition, 6% of the flour will be wasted while making the pizza.
+It is also known that:
+
+- 1kg of flour costs 30.000VND and 31.000VND from providers A and B respectively
+- Provider A gives a discount of 3% for orders of less than 30kg and 5% for orders of at least 30kg
+- Provider B gives a discount of 5% for orders of less than 40kg and 10% for orders of at least 40kg
+- Both providers deliver in bags of 2kg, so the order must be divisible by 2
+
+Your function must take input the following variables: large_thick, large_thin,
+medium_thick, medium_thin. They represent the corresponding number of pizzas
+estimated for each type.
+
+It must print out the following statement:
+
+```
+We need to order ???kg of flour, which costs ???VND if we buy from A and ???VND if we
+buy from B.
+```
+
+It must also return the order amount (rounded to 2kg), the provider selected and total cost
+in this exact order. If there is a tie, we buy from provider A because he is more friendly.
+
+**IMPORTANT**: Your function must be named and must have the function parameters listed
+in the same order as below. (I will use a python script with a database to automatically test
+your function so please don’t do it differently)
