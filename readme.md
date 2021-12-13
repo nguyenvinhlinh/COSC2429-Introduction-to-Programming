@@ -45,6 +45,8 @@ def find_split_80(integer_list):
     return split_80
 ```
 
+Test: `python -m test/p1-test`
+
 
 ## Problem 2:
 The constant π is defined as the ratio between a circle’s circumference to its diameter.
@@ -93,6 +95,8 @@ def estimate_pi(N):
             inner_counter += 1
     return 4.0 * inner_counter / N
 ```
+
+Test: `python -m test/p2-test`
 
 ## Problem 3:
 You are the owner of a pizza restaurant. Every two days, you have to predict the numbers
@@ -184,6 +188,8 @@ def flour_order(large_thick, large_thin, medium_thick, medium_thin):
     return total_flour, selected_provider, total_cost
 ```
 
+Test: `python -m test/p3-test`
+
 
 ## Problem 4:
 You decide to keep track of the number of pizzas sold for each type every day with a stacked bar chart.
@@ -208,3 +214,6 @@ def draw_bar_chart(record_date, large_thick, large_thin, medium_thick, medium_th
 # your logic here
 # you don’t need to return anything
 ```
+
+Solution: `/lib/p4.py`
+Test: `python -m lib/p4-solution`
