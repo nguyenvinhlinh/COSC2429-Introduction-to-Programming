@@ -101,11 +101,12 @@ will need to estimate the total amount of flour and make the decision to buy fro
 provider whose price is cheaper. You decide to write a program to help determine the
 provider. The recipes of your restaurant states that:
 
-|-------|-------|--------|
+
+
 |       | Large | Medium |
+|-------|-------|--------|
 | Thick | 550g  | 450g   |
 | Thin  | 500g  | 400g   |
-|-------|-------|--------|
 
 
 
