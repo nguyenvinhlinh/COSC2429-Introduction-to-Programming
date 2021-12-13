@@ -36,3 +36,11 @@ def find_split_80(integer_list):
 # return the desired number
 return split_80
 ```
+
+Solution:
+```python
+def find_split_80(integer_list):
+    integer_list.sort()
+    split_80 = integer_list[16]
+    return split_80
+```
