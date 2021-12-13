@@ -135,3 +135,49 @@ in this exact order. If there is a tie, we buy from provider A because he is mor
 **IMPORTANT**: Your function must be named and must have the function parameters listed
 in the same order as below. (I will use a python script with a database to automatically test
 your function so please don’t do it differently)
+
+```python
+def flour_order(large_thick, large_thin, medium_thick, medium_thin):
+# your logic here
+# returned variables must be exactly like this
+return total_flour, selected_provider, total_cost
+```
+
+Solution
+```python
+def flour_order(large_thick, large_thin, medium_thick, medium_thin):
+    total_flour = math.ceil((0.55 * large_thick) + (0.5 * large_thin) +  (0.45 * medium_thick) + (0.4* medium_thin))
+
+    if total_flour % 2 == 1:
+        total_flour = total_flour + 1
+
+    shop_a_price = 30000
+    shop_b_price = 31000
+
+    cost_a = 0
+    cost_b = 0
+    # Shop A - Calculation
+    if total_flour >= 30:
+        cost_a = total_flour * shop_a_price * 0.95
+    else:
+        cost_a = total_flour * shop_a_price * 0.97
+
+    # Shop B - Calculation
+    if total_flour >= 40:
+        cost_b = total_flour * shop_b_price * 0.9
+    else:
+        cost_b = total_flour * shop_b_price * 0.95
+
+    print "We need to order %dkg of flour, which costs %fVND if we buy from A and %fVND if we buy from B."%(total_flour, cost_a, cost_b)
+
+    selected_provider = ""
+    total_cost = 0
+    if cost_a <= cost_b:
+        selected_provider = "A"
+        total_cost = cost_a
+    else:
+        selected_provider = "B"
+        total_cost = cost_b
+
+    return total_flour, selected_provider, total_cost
+```
